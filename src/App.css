@@ -1,0 +1,49 @@
+
+.mem {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center
+  
+}
+
+.mem > div {
+  border-radius: 30px;
+  border: 10px solid grey;
+  padding: 10px;
+  background: lightgrey;
+  margin-top: 10px;
+}
+.mem > div > img {
+    width: 40vw;
+    
+}
+
+.App {
+  text-align: center;
+}
+
+.navigation ul {
+  list-style-type: none;
+  position: fixed;
+  width: 100%;
+  background-color: black;
+}
+
+.navigation li {
+  float: left;
+}
+
+.navigation li a {
+  color: white;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+}
+
+.navigation li:hover {
+    background-color: grey;
+  }
+  .navigation a.active {
+    background-color: darkgrey;
+  }
