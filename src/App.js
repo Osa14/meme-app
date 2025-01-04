@@ -2,8 +2,9 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import "./App.css";
 import { NavComponent } from "./components/Navigation";
 import { ErrorPage } from "./pages/Error";
-import { RegularPage } from "./pages/Regular";
-import { HotPage } from "./pages/Hot";
+import { useState } from "react";
+import { MemePage } from "./pages/MemePage";
+
 
 
 
@@ -48,12 +49,9 @@ function App() {
     },
   ]
 
-  const hotData = memData.filter((memData) => {
-    return memData.upvotes - memData.downvotes > 5
-  })
-  const regularData = memData.filter((memData) => {
-    return memData.upvotes - memData.downvotes <= 5
-  })
+  const [data, setMemes] = useState(memData)
+
+  
 
   return (
     <div className="App">
@@ -61,8 +59,8 @@ function App() {
         <NavComponent />
         <main>
           <Routes>
-            <Route path="/" element={<RegularPage data={regularData} />} />
-            <Route path="/hot" element={<HotPage data={hotData} />} />
+            <Route path="/" element={<MemePage data={data} setMemes={setMemes} isHot={false}/>} />
+            <Route path="/hot" element={<MemePage data={data} setMemes={setMemes} isHot={true}/>} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </main>

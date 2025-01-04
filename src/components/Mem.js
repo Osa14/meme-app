@@ -1,30 +1,24 @@
 import { useEffect, useRef, useState } from "react";
 
-export default function Mem(props) {
+export default function Mem({data, setMemes}) {
 
-  const dane = props.data
+  const addUpVote = () => {
+    // setMemes(data.upvotes + 1)
+  }
 
-  const [upCounter, setUpCounter] = useState(dane.upvotes);
-  const [downCounter, setDownCounter] = useState(dane.downvotes);
-
-  const handleClick1 = () => {
-    setUpCounter(upCounter - (-1));
-  };
-
-
-  const handleClick2 = () => {
-    setDownCounter(downCounter - (-1));
-  };
+  const addDownVote = () => {
+    // setMemes(data.downvotes + 1)
+  }
 
   return (
     <section className="mem">
       <div>
-        <h1>{dane.title}</h1>
-        <img src={dane.img} />
-        <p>Upvotes: {upCounter}</p>
-        <p>DownVotes: {downCounter}</p>
-        <button onClick={handleClick1}>Upvote</button>
-        <button onClick={handleClick2}>Downvote</button>
+        <h1>{data.title}</h1>
+        <img src={data.img} />
+        <p>Upvotes: {data.upvotes}</p>
+        <p>DownVotes: {data.downvotes}</p>
+        <button onClick={addUpVote}>Upvote</button>
+        <button onClick={addDownVote}>Downvote</button>
       </div>
     </section>
   );
