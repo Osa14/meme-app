@@ -54,7 +54,6 @@ export function AddComponent({ setMemes }) {
                 </li>
                 <li>
                     <button onClick={addMeme}>Submit</button>
-                    <button onClick={showMeme}>Show meme</button>
                 </li>
                 <li>
                     Meme:
