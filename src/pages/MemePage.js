@@ -16,7 +16,11 @@ export function MemePage({ data, setMemes, isHot }) {
 
 
     return (
-        <div>
+        <div id="memePage">
+            <br></br>
+            <br></br>
+            <br></br>
+            
             <ul>
                 {filteredData.map((mem) => (
                     <li>

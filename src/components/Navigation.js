@@ -10,6 +10,9 @@ export function NavComponent() {
         <li>
           <NavLink to="/hot">Hot</NavLink>
         </li>
+        <li>
+          <NavLink to="/add">Add Meme</NavLink>
+        </li>
       </ul>
       
     </nav>

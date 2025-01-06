@@ -4,6 +4,7 @@ import { NavComponent } from "./components/Navigation";
 import { ErrorPage } from "./pages/Error";
 import { useState } from "react";
 import { MemePage } from "./pages/MemePage";
+import { AddComponent } from "./pages/AddMeme";
 
 
 
@@ -61,6 +62,7 @@ function App() {
           <Routes>
             <Route path="/" element={<MemePage data={data} setMemes={setMemes} isHot={false}/>} />
             <Route path="/hot" element={<MemePage data={data} setMemes={setMemes} isHot={true}/>} />
+            <Route path="/add" element={<AddComponent setMemes={setMemes}/>} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </main>

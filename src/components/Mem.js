@@ -3,12 +3,28 @@ import { useEffect, useRef, useState } from "react";
 export default function Mem({data, setMemes}) {
 
   const addUpVote = () => {
-    // setMemes(data.upvotes + 1)
-  }
+    setMemes((d) => {
+      return d.map((mem) => {
+        if (mem.title === data.title) {
+          return { ...mem, upvotes: Number(mem.upvotes) + 1 };
+        } else {
+          return mem;
+        }
+      });
+    });
+  };
 
   const addDownVote = () => {
-    // setMemes(data.downvotes + 1)
-  }
+    setMemes((d) => {
+      return d.map((mem) => {
+        if (mem.title === data.title) {
+          return { ...mem, downvotes: Number(mem.downvotes) + 1 };
+        } else {
+          return mem;
+        }
+      });
+    });
+  };
 
   return (
     <section className="mem">
