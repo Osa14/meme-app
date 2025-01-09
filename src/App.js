@@ -21,15 +21,18 @@ function App() {
       })
   }, []);
 
+  
+
   return (
     <div className="App">
       {data && <BrowserRouter>
         <NavComponent />
         <main>
           <Routes>
-            <Route path="/" element={<MemePage data={data} setMemes={setMemes} isHot={false} />} />
-            <Route path="/hot" element={<MemePage data={data} setMemes={setMemes} isHot={true} />} />
+            <Route path="/" element={<MemePage data={data} setMemes={setMemes} isHot={false} isFav={false}/>} />
+            <Route path="/hot" element={<MemePage data={data} setMemes={setMemes} isHot={true} isFav={false}/>} />
             <Route path="/add" element={<AddComponent data={data} setMemes={setMemes} />} />
+            <Route path="/fav" element={<MemePage data={data} setMemes={setMemes} isHot={false} isFav={true} />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </main>

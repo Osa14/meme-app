@@ -12,10 +12,11 @@ export function AddComponent({ setMemes }) {
             title: newTitle,
             upvotes: '0',
             downvotes: '0',
+            isfav: false,
             img: newImg
         };
 
-        if((newTitle === "")&&(newImg === "")){
+        if((newTitle === "")||(newImg === "")){
             alert("Mem powinien być śmieszny a nie pusty!")
         } else {
             setMemes(d => [...d, newMeme]);
@@ -32,9 +33,7 @@ export function AddComponent({ setMemes }) {
         setNewImg(event.target.value)
     }
 
-    function showMeme() {
-
-    }
+   
 
 
     return (

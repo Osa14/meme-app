@@ -13,6 +13,9 @@ export function NavComponent() {
         <li>
           <NavLink to="/add">Add Meme</NavLink>
         </li>
+        <li>
+          <NavLink to="/fav">Favorites</NavLink>
+        </li>
       </ul>
       
     </nav>
