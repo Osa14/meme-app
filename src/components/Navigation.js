@@ -3,21 +3,24 @@ import { NavLink } from "react-router";
 export function NavComponent() {
   return (
     <nav className="navigation">
+
       <ul>
         <li>
-          <NavLink to="/">Regular</NavLink>
+          <NavLink to="/"><div><h1>MEMIARZ.PL</h1></div></NavLink>
         </li>
         <li>
-          <NavLink to="/hot">Hot</NavLink>
+          <NavLink to="/regular"><div>Regular</div></NavLink>
         </li>
         <li>
-          <NavLink to="/add">Add Meme</NavLink>
+          <NavLink to="/hot"><div>Hot</div></NavLink>
         </li>
         <li>
-          <NavLink to="/fav">Favorites</NavLink>
+          <NavLink to="/add"><div>Add Meme</div></NavLink>
+        </li>
+        <li>
+          <NavLink to="/fav"><div>Favorites</div></NavLink>
         </li>
       </ul>
-      
     </nav>
   );
 }

@@ -18,16 +18,14 @@ export function MemePage({ data, setMemes, isHot, isFav }) {
         })
     }
 
-    
-    
+
+
 
 
     return (
-        <div id="memePage">
-            <br></br>
-            <br></br>
-            <br></br>
-            
+        <section id="memePage">
+            <br />
+            <br />
             <ul>
                 {filteredData.map((mem) => (
                     <li>
@@ -35,6 +33,6 @@ export function MemePage({ data, setMemes, isHot, isFav }) {
                     </li>
                 ))}
             </ul>
-        </div>
+        </section>
     );
 }

@@ -30,6 +30,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<MemePage data={data} setMemes={setMemes} isHot={false} isFav={false}/>} />
+            <Route path="/regular" element={<MemePage data={data} setMemes={setMemes} isHot={false} isFav={false}/>} />
             <Route path="/hot" element={<MemePage data={data} setMemes={setMemes} isHot={true} isFav={false}/>} />
             <Route path="/add" element={<AddComponent data={data} setMemes={setMemes} />} />
             <Route path="/fav" element={<MemePage data={data} setMemes={setMemes} isHot={false} isFav={true} />} />

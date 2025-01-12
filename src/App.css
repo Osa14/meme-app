@@ -1,26 +1,70 @@
+.App {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+  font-size: 15px;
+  background-color: grey;
+  color: white;
+  border-radius: 25px;
+  padding: 5px;
+  margin: 5px;
+}
+
+input {
+  margin:10px;
+}
 
 .mem {
-  
   display: flex;
   align-items: center;
   justify-content: center
-  
 }
 
-.mem > div {
+.mem div {
   border-radius: 30px;
-  border: 10px solid grey;
-  padding: 10px;
+  padding: 0px 10px 0px 10px;
   background: lightgrey;
-  margin-top: 10px;
-}
-.mem > div > img {
-    width: 40vw;
-    
+  margin-top: 40px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(66, 68, 90, 1);
+  box-shadow: 0px 0px 20px 0px rgba(66, 68, 90, 1);
 }
 
-.App {
-  text-align: center;
+.mem div img {
+  width: 30vw;
+  border: solid black;
+}
+
+.mem div h1 {
+  margin: 10px;
+}
+
+.memMenu {
+  list-style-type: none;
+}
+
+.memMenu li {
+  float: right;
+}
+
+.upVote {
+  color: green;
+  font-size: 25px;
+  margin: 0px 5px 0px 5px;
+
+}
+
+.downVote {
+  color: red;
+  font-size: 25px;
+  margin: 0px 5px 0px 5px;
+}
+
+.navigation {
+  color: white;
+  
 }
 
 .navigation ul {
@@ -28,6 +72,8 @@
   position: fixed;
   width: 100%;
   background-color: black;
+  z-index: 1;
+  
 }
 
 .navigation li {
@@ -36,15 +82,53 @@
 
 .navigation li a {
   color: white;
-  padding: 20px;
+  padding: 10px 20px 10px 20px;
   display: block;
   text-decoration: none;
 }
 
-.navigation li:hover {
-    background-color: grey;
-  }
-  .navigation a.active {
-    background-color: darkgrey;
-  }
+.navigation li a div{
+  height: 28px;
+  vertical-align: middle;
+  display: table-cell;
+}
 
+.navigation li:hover {
+  background-color: grey;
+}
+
+.navigation a.active {
+  background-color: darkgrey;
+}
+
+.star {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.star input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.star svg {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  transition: all 0.3s;
+  fill: white;
+}
+
+.star input:checked~svg {
+  fill: orange;
+}
+
+.star svg:hover {
+  transform: scale(1.1);
+}

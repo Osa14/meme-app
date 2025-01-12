@@ -37,25 +37,31 @@ export function AddComponent({ setMemes }) {
 
 
     return (
-        <div id="add">
+        <section className="add">
             <br></br>
             <br></br>
             <br></br>
             <br></br>
             <ul>
                 <li>
-                    Title:
+                    <p>Title:</p>
                     <input type='text' value={newTitle} onChange={handleTitleChange} placeholder="Enter title" />
                 </li>
                 <li>
-                    ImgURL:
-                    <input type='text' value={newImg} onChange={handleImgChange} placeholder="Enter ImgURL" />
+                    <p>ImgURL:</p>
+                    <input type='text' value={newImg}  onChange={handleImgChange} placeholder="Enter ImgURL" />
                 </li>
                 <li>
                     <button onClick={addMeme}>Submit</button>
                 </li>
                 <li>
-                    Meme:
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+                    Preview:
                     <Mem setMemes={setMemes}
                         data={
                             {
@@ -67,6 +73,6 @@ export function AddComponent({ setMemes }) {
                         } />
                 </li>
             </ul>
-        </div>
+        </section>
     );
 }
