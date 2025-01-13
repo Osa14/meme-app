@@ -23,16 +23,18 @@ export function MemePage({ data, setMemes, isHot, isFav }) {
 
 
     return (
-        <section id="memePage">
-            <br />
-            <br />
-            <ul>
-                {filteredData.map((mem) => (
-                    <li key={mem.title}>
-                        <Mem data={mem} setMemes={setMemes}></Mem>
+        <section className="memePage">
+                <ul>
+                    <li id="memePageSpace">
+
                     </li>
-                ))}
-            </ul>
+                    {filteredData.map((mem) => (
+                        <li key={mem.title}>
+                            <Mem data={mem} setMemes={setMemes}></Mem>
+                        </li>
+                    ))}
+                </ul>
+            
         </section>
     );
 }
