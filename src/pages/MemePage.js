@@ -28,7 +28,7 @@ export function MemePage({ data, setMemes, isHot, isFav }) {
             <br />
             <ul>
                 {filteredData.map((mem) => (
-                    <li>
+                    <li key={mem.title}>
                         <Mem data={mem} setMemes={setMemes}></Mem>
                     </li>
                 ))}
