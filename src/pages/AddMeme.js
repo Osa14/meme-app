@@ -39,8 +39,7 @@ export function AddComponent({ setMemes }) {
     return (
         <section className="add">
             <ul>
-                <li id="memePageSpace">
-
+                <li className="addMemeSpace">
                 </li>
                 <li>
                     <p>Title:</p>

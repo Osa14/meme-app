@@ -3,8 +3,12 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#memePageSpace {
+.memePageSpace {
   margin-bottom: 20px;
+}
+
+.addMemeSpace{
+  margin-bottom: 40px;
 }
 
 button {
@@ -147,8 +151,12 @@ input {
     float: inherit;
   }
 
-  #memePageSpace {
+  .memePageSpace {
     margin-bottom: 220px;
+  }
+
+  .addMemeSpace{
+    margin-bottom: 240px;
   }
 
 }

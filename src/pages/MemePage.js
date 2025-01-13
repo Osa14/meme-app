@@ -25,7 +25,7 @@ export function MemePage({ data, setMemes, isHot, isFav }) {
     return (
         <section className="memePage">
                 <ul>
-                    <li id="memePageSpace">
+                    <li className="memePageSpace">
 
                     </li>
                     {filteredData.map((mem) => (
