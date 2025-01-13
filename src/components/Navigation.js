@@ -6,19 +6,19 @@ export function NavComponent() {
 
       <ul>
         <li>
-          <NavLink to="/"><div><h1>MEMIARZ.PL</h1></div></NavLink>
+          <NavLink to="/meme-app"><div><h1>MEMIARZ.PL</h1></div></NavLink>
         </li>
         <li>
-          <NavLink to="/regular"><div>Regular</div></NavLink>
+          <NavLink to="/meme-app/regular"><div>Regular</div></NavLink>
         </li>
         <li>
-          <NavLink to="/hot"><div>Hot</div></NavLink>
+          <NavLink to="/meme-app/hot"><div>Hot</div></NavLink>
         </li>
         <li>
-          <NavLink to="/add"><div>Add Meme</div></NavLink>
+          <NavLink to="/meme-app/add"><div>Add Meme</div></NavLink>
         </li>
         <li>
-          <NavLink to="/fav"><div>Favorites</div></NavLink>
+          <NavLink to="/meme-app/fav"><div>Favorites</div></NavLink>
         </li>
       </ul>
     </nav>
