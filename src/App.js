@@ -29,11 +29,11 @@ function App() {
         <NavComponent />
         <main>
           <Routes>
-            <Route path="/meme-app" element={<MemePage data={data} setMemes={setMemes} isHot={false} isFav={false}/>} />
-            <Route path="/meme-app/regular" element={<MemePage data={data} setMemes={setMemes} isHot={false} isFav={false}/>} />
-            <Route path="/meme-app/hot" element={<MemePage data={data} setMemes={setMemes} isHot={true} isFav={false}/>} />
-            <Route path="/meme-app/add" element={<AddComponent data={data} setMemes={setMemes} />} />
-            <Route path="/meme-app/fav" element={<MemePage data={data} setMemes={setMemes} isHot={false} isFav={true} />} />
+            <Route path="/" element={<MemePage data={data} setMemes={setMemes} isHot={false} isFav={false}/>} />
+            <Route path="/regular" element={<MemePage data={data} setMemes={setMemes} isHot={false} isFav={false}/>} />
+            <Route path="/hot" element={<MemePage data={data} setMemes={setMemes} isHot={true} isFav={false}/>} />
+            <Route path="/add" element={<AddComponent data={data} setMemes={setMemes} />} />
+            <Route path="/fav" element={<MemePage data={data} setMemes={setMemes} isHot={false} isFav={true} />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </main>
