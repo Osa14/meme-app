@@ -16,12 +16,12 @@ export function AddComponent({ setMemes }) {
             img: newImg
         };
 
-        if((newTitle === "")||(newImg === "")){
+        if ((newTitle === "") || (newImg === "")) {
             alert("Mem powinien być śmieszny a nie pusty!")
         } else {
             setMemes(d => [...d, newMeme]);
         }
-        
+
         // alert("Mem powinien być w formcie .jpg")
     }
 
@@ -33,23 +33,22 @@ export function AddComponent({ setMemes }) {
         setNewImg(event.target.value)
     }
 
-   
+
 
 
     return (
         <section className="add">
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
             <ul>
+                <li id="memePageSpace">
+
+                </li>
                 <li>
                     <p>Title:</p>
                     <input type='text' value={newTitle} onChange={handleTitleChange} placeholder="Enter title" />
                 </li>
                 <li>
                     <p>ImgURL:</p>
-                    <input type='text' value={newImg}  onChange={handleImgChange} placeholder="Enter ImgURL" />
+                    <input type='text' value={newImg} onChange={handleImgChange} placeholder="Enter ImgURL" />
                 </li>
                 <li>
                     <button onClick={addMeme}>Submit</button>
