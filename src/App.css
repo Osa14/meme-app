@@ -87,16 +87,16 @@ input {
   float: left;
 }
 
-.logo {
-  height: 60px;
-  border: 5px solid black;
-}
-
 .navigation li a {
   height: 60px;
   color: white;
   display: block;
   text-decoration: none;
+}
+
+.logo {
+  height: 60px;
+  border: 5px solid black;
 }
 
 .navigation li a div {
@@ -149,7 +149,7 @@ input {
 
   .logo {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   .mem div img {
@@ -160,9 +160,7 @@ input {
     float: inherit;
   }
 
-  .navigation li a {
-    height: auto;
-  }
+  
 
   .memePage {
     padding-top: 210px;
