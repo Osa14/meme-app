@@ -61,7 +61,6 @@ input {
   color: green;
   font-size: 25px;
   margin: 0px 5px 0px 5px;
-
 }
 
 .downVote {
@@ -152,7 +151,7 @@ input {
   }
 
   .memePageSpace {
-    margin-bottom: 220px;
+    margin-top: 220px;
   }
 
   .addMemeSpace {

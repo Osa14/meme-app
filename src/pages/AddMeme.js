@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Mem from "../components/Mem";
 
-export function AddComponent({ setMemes }) {
+export function AddComponent({ data,setMemes }) {
 
     const [newTitle, setNewTitle] = useState("");
     const [newImg, setNewImg] = useState("");
@@ -13,16 +13,17 @@ export function AddComponent({ setMemes }) {
             upvotes: '0',
             downvotes: '0',
             isfav: false,
-            img: newImg
+            img: newImg,
+            id: data.length
         };
 
         if ((newTitle === "") || (newImg === "")) {
             alert("Mem powinien być śmieszny a nie pusty!")
         } else {
+            console.log(newMeme)
             setMemes(d => [...d, newMeme]);
         }
 
-        // alert("Mem powinien być w formcie .jpg")
     }
 
     function handleTitleChange(event) {

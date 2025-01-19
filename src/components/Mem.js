@@ -5,7 +5,7 @@ export default function Mem({ data, setMemes }) {
 
     setMemes((d) => {
       return d.map((mem) => {
-        if (mem.title === data.title) {
+        if (mem.id === data.id) {
           return { ...mem, isfav: Boolean(e.target.checked) };
         } else {
           return mem;
@@ -17,7 +17,7 @@ export default function Mem({ data, setMemes }) {
   const addUpVote = () => {
     setMemes((d) => {
       return d.map((mem) => {
-        if (mem.title === data.title) {
+        if (mem.id === data.id) {
           return { ...mem, upvotes: Number(mem.upvotes) + 1 };
         } else {
           return mem;
@@ -29,7 +29,7 @@ export default function Mem({ data, setMemes }) {
   const addDownVote = () => {
     setMemes((d) => {
       return d.map((mem) => {
-        if (mem.title === data.title) {
+        if (mem.id === data.id) {
           return { ...mem, downvotes: Number(mem.downvotes) + 1 };
         } else {
           return mem;
@@ -53,13 +53,13 @@ export default function Mem({ data, setMemes }) {
             </label>
           </li>
           <li className="upVote">
-            {data.upvotes} &#129045;
+            {data.upvotes} &uarr;
           </li>
           <li>
             <button onClick={addUpVote}>Upvote</button>
           </li>
           <li className="downVote">
-            {data.downvotes} &#129047;
+            {data.downvotes} &darr;
           </li>
           <li>
             <button onClick={addDownVote}>Downvote</button>
