@@ -4,11 +4,11 @@
 }
 
 .memePage {
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 .add {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 button {
@@ -146,28 +146,28 @@ input {
 }
 
 @media only screen and (max-width: 1024px) {
+  .mem div img {
+    width: 60vw;
+  }
+}
+
+@media only screen and (max-width: 767px) {
 
   .logo {
     width: 100%;
     height: 100%;
   }
 
-  .mem div img {
-    width: 60vw;
-  }
-
   .navigation li {
     float: inherit;
   }
 
-  
-
   .memePage {
-    padding-top: 210px;
+    padding-top: 265px;
   }
 
   .add {
-    padding-top: 260px;
+    padding-top: 310px;
   }
 
 }
