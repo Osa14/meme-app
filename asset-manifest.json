@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/meme-app/static/css/main.a8b1ed48.css",
+    "main.css": "/meme-app/static/css/main.a4f2c257.css",
     "main.js": "/meme-app/static/js/main.ee34df7c.js",
     "static/js/488.0184cc19.chunk.js": "/meme-app/static/js/488.0184cc19.chunk.js",
     "index.html": "/meme-app/index.html",
-    "main.a8b1ed48.css.map": "/meme-app/static/css/main.a8b1ed48.css.map",
+    "main.a4f2c257.css.map": "/meme-app/static/css/main.a4f2c257.css.map",
     "main.ee34df7c.js.map": "/meme-app/static/js/main.ee34df7c.js.map",
     "488.0184cc19.chunk.js.map": "/meme-app/static/js/488.0184cc19.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8b1ed48.css",
+    "static/css/main.a4f2c257.css",
     "static/js/main.ee34df7c.js"
   ]
 }
