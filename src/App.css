@@ -159,6 +159,10 @@ input {
     height: 100%;
   }
 
+  .mem div img {
+    width: 80vw;
+  }
+
   .navigation li a {
     height: 15vw;
   }
