@@ -87,15 +87,20 @@ input {
   float: left;
 }
 
+.logo {
+  height: 60px;
+  border: 5px solid black;
+}
+
 .navigation li a {
+  height: 60px;
   color: white;
-  padding: 10px 20px 10px 20px;
   display: block;
   text-decoration: none;
 }
 
 .navigation li a div {
-  height: 28px;
+  padding: 20px;
   vertical-align: middle;
   display: table-cell;
 }
@@ -142,6 +147,15 @@ input {
 
 @media only screen and (max-width: 1024px) {
 
+  .navigation li a {
+    height: auto;
+  }
+
+  .logo {
+    width: 100%;
+    height: auto;
+  }
+
   .mem div img {
     width: 60vw;
   }
@@ -153,7 +167,7 @@ input {
   .memePage {
     padding-top: 210px;
   }
-  
+
   .add {
     padding-top: 260px;
   }

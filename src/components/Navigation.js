@@ -6,7 +6,7 @@ export function NavComponent() {
 
       <ul>
         <li>
-          <NavLink to="/meme-app/"><div><h1>MEMIARZ.PL</h1></div></NavLink>
+          <NavLink to="/meme-app/"><img className="logo" src="https://i.ibb.co/JKpmHKG/logo.png"></img></NavLink>
         </li>
         <li>
           <NavLink to="/meme-app/regular"><div>Regular</div></NavLink>
