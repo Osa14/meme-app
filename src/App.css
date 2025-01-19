@@ -10,7 +10,7 @@
 
 .add {
   padding-top: 80px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 
 button {
@@ -43,7 +43,7 @@ input {
 }
 
 .mem div img {
-  width: 30vw;
+  width: 40vw;
   border: solid black;
 }
 
@@ -73,7 +73,6 @@ input {
 
 .navigation {
   color: white;
-
 }
 
 .navigation ul {
@@ -156,20 +155,26 @@ input {
 @media only screen and (max-width: 767px) {
 
   .logo {
-    width: 100%;
+    width: 100vw;
     height: 100%;
   }
 
-  .navigation li {
-    float: inherit;
+  .navigation li a {
+    height: 15vw;
+  }
+
+  .navigation li a div {
+    font-size: 4vw;
+    width: 25vw;
+    padding: 4vw;
   }
 
   .memePage {
-    padding-top: 265px;
+    padding-top: calc(35vw - 60px);
   }
 
   .add {
-    padding-top: 310px;
+    padding-top: 35vw;
   }
 
 }

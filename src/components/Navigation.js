@@ -15,7 +15,7 @@ export function NavComponent() {
           <NavLink to="/meme-app/hot"><div>Hot</div></NavLink>
         </li>
         <li>
-          <NavLink to="/meme-app/add"><div>Add Meme</div></NavLink>
+          <NavLink to="/meme-app/add"><div>Add</div></NavLink>
         </li>
         <li>
           <NavLink to="/meme-app/fav"><div>Favorites</div></NavLink>
