@@ -4,11 +4,13 @@
 }
 
 .memePage {
-  padding-top: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .add {
   padding-top: 80px;
+  padding-bottom: 25px;
 }
 
 button {
