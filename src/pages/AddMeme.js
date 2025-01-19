@@ -40,8 +40,6 @@ export function AddComponent({ data,setMemes }) {
     return (
         <section className="add">
             <ul>
-                <li className="addMemeSpace">
-                </li>
                 <li>
                     <p>Title:</p>
                     <input type='text' value={newTitle} onChange={handleTitleChange} placeholder="Enter title" />
