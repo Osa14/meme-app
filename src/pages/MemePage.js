@@ -1,18 +1,18 @@
 import Mem from "../components/Mem";
 
-export function MemePage({ data, setMemes, isHot, isFav }) {
+export function MemePage({ data, setMemes, distinction }) {
 
     let filteredData = []
 
-    if (isHot) {
+    if (distinction === "hot") {
         filteredData = data.filter((memData) => {
             return memData.upvotes - memData.downvotes > 5
         })
-    } else if (isFav) {
+    } else if (distinction === "favorite") {
         filteredData = data.filter((memData) => {
             return memData.isfav === true
         })
-    } else {
+    } else if (distinction === "regular") {
         filteredData = data.filter((memData) => {
             return memData.upvotes - memData.downvotes <= 5
         })

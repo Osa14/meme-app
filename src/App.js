@@ -16,7 +16,6 @@ function App() {
         return res.json();
       })
       .then(array => {
-        console.log(array);
         setMemes(array)
       })
   }, []);
@@ -29,11 +28,11 @@ function App() {
         <NavComponent />
         <main>
           <Routes>
-            <Route path="/meme-app/" element={<MemePage data={data} setMemes={setMemes} isHot={false} isFav={false} />} />
-            <Route path="/meme-app/regular" element={<MemePage data={data} setMemes={setMemes} isHot={false} isFav={false} />} />
-            <Route path="/meme-app/hot" element={<MemePage data={data} setMemes={setMemes} isHot={true} isFav={false} />} />
+            <Route path="/meme-app/" element={<MemePage data={data} setMemes={setMemes} distinction="regular" />} />
+            <Route path="/meme-app/regular" element={<MemePage data={data} setMemes={setMemes} distinction="regular" />} />
+            <Route path="/meme-app/hot" element={<MemePage data={data} setMemes={setMemes} distinction="hot" />} />
             <Route path="/meme-app/add" element={<AddComponent data={data} setMemes={setMemes} />} />
-            <Route path="/meme-app/fav" element={<MemePage data={data} setMemes={setMemes} isHot={false} isFav={true} />} />
+            <Route path="/meme-app/fav" element={<MemePage data={data} setMemes={setMemes} distinction="favorite" />} />
             <Route path="/meme-app/*" element={<ErrorPage />} />
           </Routes>
         </main>
